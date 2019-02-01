@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
   root to: "home#index"
   post "/create-notice", to: "notices#create"
+  get "/notifications", to: "notices#notifications"
+  devise_for :users
 end

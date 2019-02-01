@@ -8,11 +8,13 @@
 <nav>
   <div class="nav-wrapper">
     <div class="container">
-      <a href="#" class="brand-logo">Notifications</a>
+      <div class="brand-logo">
+        <%= link_to("Notifications", notifications_path) %>
+      </div>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">notifications</i></a></li>
         <li>
-          <%= link_to("Exit", destroy_user_session_path, method: :delete) %>
+          <%= link_to("Logout", destroy_user_session_path, method: :delete) %>
         </li>
       </ul>
     </div>
